@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Marti X - Salve Seu Relacionamento</title>
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #FFFFFF;
+            --accent: #FF0000;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--primary);
+            background-color: var(--secondary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            letter-spacing: -1px;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        /* NOVO CSS - Seção Hero */
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .hero-content {
+            flex: 1;
+        }
+        
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 3px solid var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            
+            .hero-image img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            background: #000;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .cta-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .price {
+            font-size: 2rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .testimonials {
+            margin: 40px 0;
+        }
+        
+        .testimonial {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
+        
+        .guarantee {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffeeee;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">PEDRO MARTI <span>X</span></div>
+        </header>
+        
+        <!-- NOVA SEÇÃO HERO COM FOTO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Sua última chance de salvar seu relacionamento</h2>
+                <p>Converse com um especialista antes que seja tarde demais</p>
+            </div>
+            <div class="hero-image">
+                <!-- SUBSTITUA pelo nome do seu arquivo de imagem -->
+                <img src="sua-foto.jpg" alt="Pedro Marti X - Especialista em Relacionamentos">
+            </div>
+        </section>
+        
+        <h1>AGENDE UMA CALL ANTES QUE SEU RELACIONAMENTE ACABE!</h1>
+        <p class="subtitle">Descubra em 1 hora de conversa o que está destruindo seu relacionamento e como consertar</p>
+        
+        <div class="video-container">
+            <!-- SUBSTITUA pelo embed do seu vídeo -->
+            <iframe src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="cta-box">
+            <h2>CONVERSE COMIGO POR 1 HORA</h2>
+            <p>Vamos identificar os problemas e traçar um plano para salvar seu relacionamento</p>
+            <div class="price">R$ 100,00</div>
+            <!-- SUBSTITUA pelo seu link do Calendly -->
+            <iframe src="https://calendly.com/seu-usuario/60min" width="100%" height="600" frameborder="0"></iframe>
+        </div>
+        
+        <div class="testimonials">
+            <h2>O QUE DIZEM QUEM JÁ CONVERSOU COMIGO</h2>
+            
+            <div class="testimonial">
+                <p>"Depois de 1 hora com o Pedro, entendi onde estava errando no meu casamento. Em 2 semanas já estávamos nos entendendo muito melhor."</p>
+                <div class="testimonial-author">- Marcelo, 35 anos</div>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Nunca tinha percebido como minhas atitudes estavam afastando meu marido. A call foi um divisor de águas pra gente."</p>
+                <div class="testimonial-author">- Ana, 29 anos</div>
+            </div>
+        </div>
+        
+        <div class="guarantee">
+            <h3>SEM RISCO</h3>
+            <p>Se em 15 minutos você achar que essa conversa não está te ajudando, eu devolvo seu dinheiro na hora.</p>
+        </div>
+    </div>
+    
+    <footer>
+        © 2023 Pedro Marti X - Todos os direitos reservados<br>
+        contato@pedromartix.com
+    </footer>
+</body>
+</html>
