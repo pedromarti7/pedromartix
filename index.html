@@ -6,9 +6,9 @@
     <title>Pedro Marti X - Salve Seu Relacionamento</title>
     <style>
         :root {
-            --primary: #000000;
-            --secondary: #FFFFFF;
-            --accent: #FF0000;
+            --primary: #FFFFFF;  /* Texto branco */
+            --secondary: #000000; /* Fundo preto */
+            --accent: #FF0000;   /* Destaques vermelhos */
         }
         
         body {
@@ -42,6 +42,35 @@
         .logo span {
             color: var(--accent);
         }
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .hero-content {
+            flex: 1;
+        }
+        
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 3px solid var(--accent);
+        }
+        
+        /* Restante do CSS permanece igual */
+        /* ... */
+    </style>
+</head>
+<body>
+    <!-- O resto do HTML permanece igual -->
+    <!-- ... -->
+</body>
+</html>
         
         /* NOVO CSS - Seção Hero */
         .hero {
