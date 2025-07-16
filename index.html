@@ -45,13 +45,11 @@
 
         .hero {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 30px;
+            gap: 20px;
             margin: 40px 0;
-        }
-
-        .hero-content {
-            flex: 1;
+            text-align: center;
         }
 
         .hero-image img {
@@ -62,20 +60,7 @@
             border: 3px solid var(--accent);
         }
 
-        .authority-image {
-            width: 100%;
-            max-width: 500px;
-            margin: 20px auto;
-            display: block;
-            border-radius: 5px;
-            border: 2px solid var(--accent);
-        }
-
         @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-            }
-
             .hero-image img {
                 width: 200px;
                 height: 200px;
@@ -121,6 +106,22 @@
             border-radius: 5px;
             text-align: center;
             margin: 30px 0;
+        }
+
+        .cta-box a {
+            display: inline-block;
+            background-color: #25d366;
+            color: #FFF;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-box a:hover {
+            background-color: #128C7E;
         }
 
         .price {
@@ -238,7 +239,6 @@
             <div class="hero-content">
                 <h2>Sua última chance de salvar seu relacionamento</h2>
                 <p>Converse com um especialista antes que seja tarde demais</p>
-                <img src="https://i.imgur.com/B9inC8x.jpg" alt="Pedro Marti X - Autoridade" class="authority-image">
             </div>
             <div class="hero-image">
                 <img src="https://i.imgur.com/60dQd6D.jpg" alt="Pedro Marti X - Especialista">
@@ -253,11 +253,12 @@
         </div>
 
         <div class="cta-box">
-            <h2>CONVERSE COMIGO POR 1 HORA</h2>
+            <h2>CONVERSE COMIGO POR 30 MINUTOS</h2>
             <p>Vamos identificar os problemas e traçar um plano para salvar seu relacionamento</p>
             <div class="price">R$ 97,00</div>
-            <p style="color: #00FF00; font-weight: bold; margin-top: 10px;">BÔNUS: 1 semana de suporte via WhatsApp após a call</p>
-            <iframe src="https://calendly.com/seu-usuario/60min" width="100%" height="600" frameborder="0"></iframe>
+            <a href="https://pay.kiwify.com.br/SlixRxc" target="_blank" rel="noopener">Agende Agora</a>
+            <p style="color: #00FF00; font-weight: bold; margin: 10px 0;">BÔNUS: 1 semana de suporte via WhatsApp após a call</p>
+            <a href="https://pay.kiwify.com.br/9xgt1GH" target="_blank" rel="noopener">Agende Agora (Consultoria + Bônus WhatsApp)</a>
         </div>
 
         <div class="testimonials">
@@ -265,14 +266,14 @@
 
             <div class="testimonial">
                 <img src="https://i.imgur.com/EGV9qDM.jpg" alt="Casal satisfeito">
-                <p>"Depois de 1 hora com o Pedro, entendi onde estava errando no meu casamento. Em 2 semanas já estávamos nos entendendo muito melhor."</p>
+                <p>"Depois de 30 minutos com o Pedro, entendi onde estava errando no meu casamento. Em 2 semanas já estávamos nos entendendo muito melhor."</p>
                 <div class="testimonial-author">- Marcelo, 35 anos</div>
             </div>
 
             <div class="testimonial">
-                <img src="https://imgur.com/n9tdqS3.jpg" alt="Pedro ajudando um casal" class="couple-image">
-                <p>"Nunca tinha percebido como minhas atitudes estavam afastando meu marido. A call foi um divisor de águas pra gente."</p>
-                <div class="testimonial-author">- Ana, 29 anos</div>
+                <img src="https://i.imgur.com/n9tdqS3.jpg" alt="Pedro ajudando um casal" class="couple-image">
+                <p>" A call foi um divisor de aguas no meu relacionamento, eu não sabia o que estava fazendo de errado e o Pedro me fez acordar."</p>
+                <div class="testimonial-author">- thiago, 29 anos</div>
             </div>
         </div>
     </div>
@@ -282,7 +283,6 @@
         contato@pedromartix.com
     </footer>
 
-    <!-- Botão do WhatsApp Flutuante -->
     <div class="whatsapp-float">
         <a href="https://wa.me/5511945168168" target="_blank" rel="noopener">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
