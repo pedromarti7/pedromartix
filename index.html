@@ -6,11 +6,11 @@
     <title>Pedro Marti X - Salve Seu Relacionamento</title>
     <style>
         :root {
-            --primary: #FFFFFF;  /* Texto branco */
-            --secondary: #000000; /* Fundo preto */
-            --accent: #FF0000;   /* Destaques vermelhos */
+            --primary: #FFFFFF;
+            --secondary: #000000;
+            --accent: #FF0000;
         }
-        
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -19,41 +19,41 @@
             background-color: var(--secondary);
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             text-align: center;
             padding: 30px 0;
             border-bottom: 2px solid var(--accent);
         }
-        
+
         .logo {
             font-size: 2.5rem;
             font-weight: bold;
             color: var(--primary);
             letter-spacing: -1px;
         }
-        
+
         .logo span {
             color: var(--accent);
         }
-        
+
         .hero {
             display: flex;
             align-items: center;
             gap: 30px;
             margin: 40px 0;
         }
-        
+
         .hero-content {
             flex: 1;
         }
-        
+
         .hero-image img {
             width: 300px;
             height: 300px;
@@ -61,32 +61,41 @@
             border-radius: 5px;
             border: 3px solid var(--accent);
         }
-        
+
+        .authority-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 5px;
+            border: 2px solid var(--accent);
+        }
+
         @media (max-width: 768px) {
             .hero {
                 flex-direction: column;
             }
-            
+
             .hero-image img {
                 width: 200px;
                 height: 200px;
             }
         }
-        
+
         h1 {
             font-size: 2.2rem;
             color: var(--accent);
             margin-top: 40px;
             text-align: center;
         }
-        
+
         .subtitle {
             font-size: 1.2rem;
             text-align: center;
             margin-bottom: 40px;
-            color: #888; /* Cor mais clara para contraste com fundo preto */
+            color: #AAAAAA;
         }
-        
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -95,7 +104,7 @@
             margin: 30px 0;
             background: #000;
         }
-        
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -103,70 +112,125 @@
             width: 100%;
             height: 100%;
         }
-        
+
         .cta-box {
-            background-color: #111; /* Fundo escuro para o box */
-            border: 1px solid #333;
+            background-color: #111111;
+            border: 1px solid #333333;
             padding: 25px;
             border-radius: 5px;
             text-align: center;
             margin: 30px 0;
-            color: var(--primary);
         }
-        
+
         .price {
             font-size: 2rem;
             color: var(--accent);
             font-weight: bold;
             margin: 15px 0;
         }
-        
+
         .testimonials {
             margin: 40px 0;
         }
-        
+
         .testimonial {
-            background-color: #111; /* Fundo escuro para depoimentos */
+            background-color: #111111;
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 20px;
             font-style: italic;
-            color: var(--primary);
-            border: 1px solid #333;
+            border: 1px solid #333333;
         }
-        
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px;
+            border: 2px solid var(--accent);
+        }
+
+        .couple-image {
+            width: 100%;
+            max-width: 400px;
+            margin: 15px auto;
+            display: block;
+            border-radius: 5px;
+        }
+
         .testimonial-author {
             font-weight: bold;
             text-align: right;
             margin-top: 10px;
             color: var(--accent);
         }
-        
+
         .guarantee {
             text-align: center;
             padding: 20px;
-            background-color: #220000; /* Vermelho escuro */
+            background-color: #220000;
             border-radius: 5px;
             margin: 30px 0;
-            color: var(--primary);
         }
-        
+
         footer {
             text-align: center;
             padding: 30px 0;
-            border-top: 1px solid #333;
+            border-top: 1px solid #333333;
             margin-top: 50px;
             font-size: 0.9rem;
-            color: #888;
+            color: #AAAAAA;
         }
-        
-        @media (max-width: 600px) {
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 768px) {
             .logo {
                 font-size: 1.8rem;
             }
-            
+
             h1 {
                 font-size: 1.6rem;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float img {
+                width: 30px;
+                height: 30px;
+                margin-top: 10px;
             }
         }
     </style>
@@ -176,58 +240,64 @@
         <header>
             <div class="logo">PEDRO MARTI <span>X</span></div>
         </header>
-        
-        <!-- NOVA SEÇÃO HERO COM FOTO -->
+
         <section class="hero">
             <div class="hero-content">
                 <h2>Sua última chance de salvar seu relacionamento</h2>
                 <p>Converse com um especialista antes que seja tarde demais</p>
+                <img src="https://i.imgur.com/B9inC8x.jpg" alt="Pedro Marti X - Autoridade" class="authority-image">
             </div>
             <div class="hero-image">
-                <!-- SUBSTITUA pelo nome do seu arquivo de imagem -->
-                <img src="sua-foto.jpg" alt="Pedro Marti X - Especialista em Relacionamentos">
+                <img src="https://i.imgur.com/60dQd6D.jpg" alt="Pedro Marti X - Especialista">
             </div>
         </section>
-        
-        <h1>AGENDE UMA CALL ANTES QUE SEU RELACIONAMENTE ACABE!</h1>
+
+        <h1>AGENDE UMA CALL ANTES QUE SEU RELACIONAMENTO ACABE!</h1>
         <p class="subtitle">Descubra em 1 hora de conversa o que está destruindo seu relacionamento e como consertar</p>
-        
+
         <div class="video-container">
-            <!-- SUBSTITUA pelo embed do seu vídeo -->
             <iframe src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
         </div>
-        
+
         <div class="cta-box">
             <h2>CONVERSE COMIGO POR 1 HORA</h2>
             <p>Vamos identificar os problemas e traçar um plano para salvar seu relacionamento</p>
             <div class="price">R$ 100,00</div>
-            <!-- SUBSTITUA pelo seu link do Calendly -->
             <iframe src="https://calendly.com/seu-usuario/60min" width="100%" height="600" frameborder="0"></iframe>
         </div>
-        
+
         <div class="testimonials">
             <h2>O QUE DIZEM QUEM JÁ CONVERSOU COMIGO</h2>
-            
+
             <div class="testimonial">
+                <img src="https://i.imgur.com/EGV9qDM.jpg" alt="Casal satisfeito">
                 <p>"Depois de 1 hora com o Pedro, entendi onde estava errando no meu casamento. Em 2 semanas já estávamos nos entendendo muito melhor."</p>
                 <div class="testimonial-author">- Marcelo, 35 anos</div>
             </div>
-            
+
             <div class="testimonial">
+                <img src="https://imgur.com/n9tdqS3.jpg" alt="Pedro ajudando um casal" class="couple-image">
                 <p>"Nunca tinha percebido como minhas atitudes estavam afastando meu marido. A call foi um divisor de águas pra gente."</p>
                 <div class="testimonial-author">- Ana, 29 anos</div>
             </div>
         </div>
-        
+
         <div class="guarantee">
             <h3>SEM RISCO</h3>
             <p>Se em 15 minutos você achar que essa conversa não está te ajudando, eu devolvo seu dinheiro na hora.</p>
         </div>
     </div>
-    
+
     <footer>
         © 2023 Pedro Marti X - Todos os direitos reservados<br>
         contato@pedromartix.com
     </footer>
+
+    <!-- Botão do WhatsApp Flutuante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5511945168168" target="_blank" rel="noopener">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
 </body>
 </html>
