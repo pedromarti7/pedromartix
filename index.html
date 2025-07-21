@@ -1,305 +1,342 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Marti X - Salve Seu Relacionamento</title>
-    <style>
-        :root {
-            --primary: #FFFFFF;
-            --secondary: #000000;
-            --accent: #FF0000;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Marti X - Salve Seu Relacionamento</title>
 
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--primary);
-            background-color: var(--secondary);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 30px 0;
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--primary);
-            letter-spacing: -1px;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .hero-image img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 5px;
-            border: 3px solid var(--accent);
-        }
-
-        @media (max-width: 768px) {
-            .hero-image img {
-                width: 200px;
-                height: 200px;
-            }
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: var(--accent);
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 30px 0;
-            background: #000;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .cta-box {
-            background-color: #111111;
-            border: 1px solid #333333;
-            padding: 25px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .cta-box a {
-            display: inline-block;
-            background-color: #25d366;
-            color: #FFF;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 10px 0;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-box a:hover {
-            background-color: #128C7E;
-        }
-
-        .price {
-            font-size: 2rem;
-            color: var(--accent);
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .testimonials {
-            margin: 40px 0;
-        }
-
-        .testimonial {
-            background-color: #111111;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            font-style: italic;
-            border: 1px solid #333333;
-        }
-
-        .testimonial img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto 15px;
-            border: 2px solid var(--accent);
-        }
-
-        .couple-image {
-            width: 100%;
-            max-width: 400px;
-            margin: 15px auto;
-            display: block;
-            border-radius: 5px;
-        }
-
-        .testimonial-author {
-            font-weight: bold;
-            text-align: right;
-            margin-top: 10px;
-            color: var(--accent);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            border-top: 1px solid #333333;
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #AAAAAA;
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: all 0.3s ease;
-        }
-
-        .whatsapp-float:hover {
-            background-color: #128C7E;
-            transform: scale(1.1);
-        }
-
-        .whatsapp-float img {
-            width: 35px;
-            height: 35px;
-            margin-top: 12px;
-        }
-
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 1.8rem;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-            }
-
-            .whatsapp-float img {
-                width: 30px;
-                height: 30px;
-                margin-top: 10px;
-            }
-        }
-    </style>
-
-    <!-- TikTok Pixel Code Start -->
-    <script>
+  <!-- TikTok Pixel -->
+  <script>
     !function (w, d, t) {
-      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-      var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-      ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-      ttq.load('D1UPKB3C77UBFMCUITEG');
+      w.TiktokAnalyticsObject = t;
+      var ttq = w[t] = w[t] || [];
+      ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+      ttq.setAndDefer = function (t, e) {
+        t[e] = function () {
+          t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+        }
+      };
+      for (var i = 0; i < ttq.methods.length; i++) {
+        ttq.setAndDefer(ttq, ttq.methods[i])
+      }
+      ttq.instance = function (t) {
+        for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) {
+          ttq.setAndDefer(e, ttq.methods[n])
+        }
+        return e
+      };
+      ttq.load = function (e, n) {
+        var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+        ttq._i = ttq._i || {};
+        ttq._i[e] = [];
+        ttq._i[e]._u = i;
+        ttq._t = ttq._t || {};
+        ttq._t[e] = +new Date;
+        ttq._o = ttq._o || {};
+        ttq._o[e] = n || {};
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src = i + "?sdkid=" + e + "&lib=" + t;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(a, s)
+      };
+
+      ttq.load('D1UPK8B3C77UBFMCUITEG');
       ttq.page();
     }(window, document, 'ttq');
-    </script>
-    <!-- TikTok Pixel Code End -->
+  </script>
+  <!-- Fim TikTok Pixel -->
 
+  <style>
+    :root {
+      --primary: #FFFFFF;
+      --secondary: #000000;
+      --accent: #FF0000;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--primary);
+      background-color: var(--secondary);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 3px solid var(--accent);
+    }
+
+    @media (max-width: 768px) {
+      .hero-image img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 30px 0;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .cta-box {
+      background-color: #111111;
+      border: 1px solid #333333;
+      padding: 25px;
+      border-radius: 5px;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .cta-box a {
+      display: inline-block;
+      background-color: #25d366;
+      color: #FFF;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-box a:hover {
+      background-color: #128C7E;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: var(--accent);
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .testimonials {
+      margin: 40px 0;
+    }
+
+    .testimonial {
+      background-color: #111111;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-style: italic;
+      border: 1px solid #333333;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px;
+      border: 2px solid var(--accent);
+    }
+
+    .couple-image {
+      width: 100%;
+      max-width: 400px;
+      margin: 15px auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      text-align: right;
+      margin-top: 10px;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid #333333;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #AAAAAA;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 1.8rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">PEDRO MARTI <span>X</span></div>
-        </header>
+  <div class="container">
+    <header>
+      <div class="logo">PEDRO MARTI <span>X</span></div>
+    </header>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Sua última chance de salvar seu relacionamento</h2>
-                <p>Converse com um especialista antes que seja tarde demais</p>
-            </div>
-            <div class="hero-image">
-                <img src="https://i.imgur.com/60dQd6D.jpg" alt="Pedro Marti X - Especialista">
-            </div>
-        </section>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Sua última chance de salvar seu relacionamento</h2>
+        <p>Converse com um especialista antes que seja tarde demais</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://i.imgur.com/60dQd6D.jpg" alt="Pedro Marti X - Especialista">
+      </div>
+    </section>
 
-        <h1>AGENDE UMA CALL ANTES QUE SEU RELACIONAMENTO ACABE!</h1>
-        <p class="subtitle">Agende uma call antes que você seja traído. Descubra agora se seu parceiro está sendo infiel.</p>
+    <h1>AGENDE UMA CALL ANTES QUE SEU RELACIONAMENTO ACABE!</h1>
+    <p class="subtitle">Agende uma call antes que você seja traído. Descubra agora se seu parceiro está sendo infiel.</p>
 
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="cta-box">
-            <h2>CONVERSE COMIGO POR 30 MINUTOS</h2>
-            <p>Vamos identificar os problemas e traçar um plano para salvar seu relacionamento</p>
-            <div class="price">R$ 97,00</div>
-            <a href="https://wa.me/5511990005701?text=Oi,%20quero%20realizar%20o%20agendamento%20da%20consulta." target="_blank" rel="noopener">Agende Agora</a>
-            <p style="color: #00FF00; font-weight: bold; margin: 10px 0;">BÔNUS: 1 semana de suporte via WhatsApp após a call</p>
-            <a href="https://wa.me/5511990005701?text=Oi,%20quero%20realizar%20o%20agendamento%20da%20consulta." target="_blank" rel="noopener">Agende Agora (Consultoria + Bônus WhatsApp)</a>
-        </div>
-
-        <div class="testimonials">
-            <h2>DEPOIMENTOS</h2>
-
-            <div class="testimonial">
-                <img src="https://i.imgur.com/EGV9qDM.jpg" alt="Casal satisfeito">
-                <p>"Depois de 30 minutos com o Pedro, entendi onde estava errando no meu casamento. Em 2 semanas já estávamos nos entendendo muito melhor."</p>
-                <div class="testimonial-author">- Marcelo, 35 anos</div>
-            </div>
-
-            <div class="testimonial">
-                <img src="https://i.imgur.com/n9tdqS3.jpg" alt="Pedro ajudando um casal" class="couple-image">
-                <p>"Nunca tinha percebido como minhas atitudes estavam afastando minha noiva. A call foi um divisor de águas pra gente."</p>
-                <div class="testimonial-author">- thiago, 29 anos</div>
-            </div>
-        </div>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <footer>
-        © 2023 Pedro Marti X - Todos os direitos reservados<br>
-        contato@pedromartix.com
-    </footer>
+    <div class="cta-box">
+      <h2>CONVERSE COMIGO POR 30 MINUTOS</h2>
+      <p>Vamos identificar os problemas e traçar um plano para salvar seu relacionamento</p>
+      <div class="price">R$ 97,00</div>
+      <a href="https://wa.me/5511990005701?text=Oi,%20quero%20realizar%20o%20agendamento%20da%20consulta."
+         onclick="ttq.track('ClickButton');"
+         target="_blank" rel="noopener">Agende Agora</a>
 
-    <div class="whatsapp-float">
-        <a href="https://wa.me/5511945168168" target="_blank" rel="noopener">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        </a>
+      <p style="color: #00FF00; font-weight: bold; margin: 10px 0;">BÔNUS: 1 semana de suporte via WhatsApp após a call</p>
+
+      <a href="https://wa.me/5511990005701?text=Oi,%20quero%20realizar%20o%20agendamento%20da%20consulta."
+         onclick="ttq.track('ClickButton');"
+         target="_blank" rel="noopener">Agende Agora (Consultoria + Bônus WhatsApp)</a>
     </div>
+
+    <div class="testimonials">
+      <h2>DEPOIMENTOS</h2>
+
+      <div class="testimonial">
+        <img src="https://i.imgur.com/EGV9qDM.jpg" alt="Casal satisfeito">
+        <p>"Depois de 30 minutos com o Pedro, entendi onde estava errando no meu casamento. Em 2 semanas já estávamos nos entendendo muito melhor."</p>
+        <div class="testimonial-author">- Marcelo, 35 anos</div>
+      </div>
+
+      <div class="testimonial">
+        <img src="https://i.imgur.com/n9tdqS3.jpg" alt="Pedro ajudando um casal" class="couple-image">
+        <p>"Nunca tinha percebido como minhas atitudes estavam afastando minha noiva. A call foi um divisor de águas pra gente."</p>
+        <div class="testimonial-author">- Thiago, 29 anos</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2023 Pedro Marti X - Todos os direitos reservados<br>
+    contato@pedromartix.com
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5511945168168" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+  </div>
 </body>
 </html>
