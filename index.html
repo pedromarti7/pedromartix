@@ -48,7 +48,7 @@
     :root {
       --primary: #FFFFFF;
       --secondary: #000000;
-      --accent: #FF0000;
+      --accent: #7c4dff;
     }
 
     body {
@@ -59,6 +59,20 @@
       background-color: var(--secondary);
       line-height: 1.6;
     }
+section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.secao-raio {
+  background-image: url('hero-overlay.jpg');
+}
+
+.secao-fogo {
+  background-image: url('hero-bg.jpg');
+}
 
     .container {
       max-width: 800px;
@@ -166,7 +180,7 @@
 
     .price {
       font-size: 2rem;
-      color: var(--accent);
+      color: #00FF00;
       font-weight: bold;
       margin: 15px 0;
     }
@@ -266,7 +280,18 @@
         height: 30px;
         margin-top: 10px;
       }
-    }
+      .bio {
+        background-color: #111;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 1px solid #333;
+      }
+
+      .bio h2 {
+        color: var(--accent);
+        margin-bottom: 15px;
+      }
   </style>
 </head>
 <body>
@@ -285,11 +310,11 @@
       </div>
     </section>
 
-    <h1>AGENDE UMA CALL ANTES QUE SEU RELACIONAMENTO ACABE!</h1>
+    <h1>RESERVE O SEU ANTES QUE SEU RELACIONAMENTO ACABE!</h1>
     <p class="subtitle">Você está sendo Manipulado e ainda não Percebeu? Descubra agora se sua parceiro está sendo infiel. E como se precaver para Nunca Mais cair Nessa armadilha.</p>
 
     <div class="video-container">
-      <iframe src="https://youtu.be/f9qPkqs3tA8" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/f9qPkqs3tA8" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="cta-box">
@@ -301,7 +326,7 @@
          onclick="ttq.track('ClickButton');"
          target="_blank" rel="noopener">Adquira Agora!!</a>
 
-      <p style="color: #00FF00; font-weight: bold; margin: 10px 0;">BÔNUS: 1 semana de suporte via WhatsApp após a call</p>
+      <p style="color: #7c4dff; font-weight: bold; margin: 10px 0;">BÔNUS: 1 semana de suporte via WhatsApp após a call</p>
 
       <a href="https://wa.me/5511990005701?text=Oi,%20quero%20realizar%20o%20agendamento%20da%20consulta."
          onclick="ttq.track('ClickButton');"
@@ -324,6 +349,25 @@
       </div>
     </div>
   </div>
+<section class="bio">
+  <div class="container">
+    <h2>Sobre o Autor</h2>
+    <p><strong>Pedro Marti</strong> é especialista em desenvolvimento masculino e estratégias de reconquista. Com experiência internacional e milhares de seguidores, seu método já transformou a vida de centenas de homens que buscavam entender como as mulheres realmente pensam.</p>
+  </div>
+</section>
+<section class="secao-raio">
+  <div class="container">
+    <h1>Seu título principal</h1>
+    <p>Algum conteúdo aqui...</p>
+  </div>
+</section>
+
+<section class="secao-fogo">
+  <div class="container">
+    <h2>Mais informações ou bullet points</h2>
+    <p>Texto ou outro bloco aqui...</p>
+  </div>
+</section>
 
   <footer>
     © 2023 Pedro Marti X - Todos os direitos reservados<br>
@@ -335,5 +379,3 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
   </div>
-</body>
-</html>
