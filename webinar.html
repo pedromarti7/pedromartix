@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento Exclusivo — Manual da Mente Feminina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* Variáveis de cor e espaçamento */
+    :root {
+      --primary: #fff;
+      --secondary: #000;
+      --accent: #7c4dff;
+      --accent-light: #a78bfa;
+      --accent-dark: #5a35cc;
+      --whatsapp: #25d366;
+      --success: #00e676;
+      --error: #ff5252;
+      --gray-100: #f5f5f5;
+      --gray-200: #e0e0e0;
+      --gray-800: #262626;
+      --gray-900: #121212;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Arial;
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+      color: var(--primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      font-size: 28px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
+    }
+
+    .logo::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      border-radius: 2px;
+    }
+
+    .hero {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--primary), var(--accent-light));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p.lead {
+      color: #cfcfcf;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      margin: 0 auto;
+      max-width: 900px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: 0;
+      display: block;
+    }
+
+    .timer {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-top: 20px;
+    }
+
+    .offer {
+      margin-top: 40px;
+      padding: 24px;
+      border: 1px solid rgba(38, 38, 38, 0.5);
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(18, 18, 18, 0.8), rgba(11, 11, 11, 0.8));
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 40px rgba(124, 77, 255, 0.2);
+    }
+
+    .offer h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+
+    .offer p {
+      color: #cfcfcf;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .offer .price {
+      font-size: 2.2rem;
+      color: #00FF00;
+      font-weight: 800;
+      margin: 20px 0;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    }
+
+    .offer button {
+      padding: 16px 24px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      color: #000;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offer button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .order-bump {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      background: rgba(14, 14, 14, 0.7);
+      border: 1px solid rgba(51, 51, 51, 0.5);
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .order-bump input {
+      margin-right: 12px;
+      width: 20px;
+      height: 20px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 32px 0;
+      border-top: 1px solid rgba(34, 34, 34, 0.5);
+      color: #aaa;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">PEDRO MARTI</div>
+    </header>
+
+    <section class="hero">
+      <h1>Webinar Exclusivo: Descubra os Sinais</h1>
+      <p class="lead">Aperte o play e acompanhe atentamente. O botão de acesso à oferta será liberado após alguns minutos de vídeo.</p>
+      <div class="video-wrapper">
+        <iframe id="webinarVideo" src="https://www.youtube.com/embed/f9qPkqs3tA8?rel=0&amp;modestbranding=1&amp;controls=1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="countdown" class="timer"></div>
+    </section>
+
+    <section id="offerSection" class="offer" style="display: none;">
+      <h2>Oferta Especial Limitada</h2>
+      <p>Garanta agora o seu acesso ao Manual da Mente Feminina com todos os bônus exclusivos. Faça seu investimento no seu relacionamento hoje mesmo!</p>
+      <div class="price">10x de R$4,80 ou R$47,97 à vista.</div>
+      <div class="order-bump">
+        <input type="checkbox" id="bump" />
+        <label for="bump">Adicionar Guia da Reconquista por apenas R$27</label>
+      </div>
+      <button id="ctaButton" disabled>Adquirir Agora</button>
+    </section>
+  </div>
+  <footer>© 2025 Pedro Marti — Todos os direitos reservados</footer>
+
+  <script>
+    // Proteção: garante que apenas leads inscritos vejam o webinar
+    (function gate() {
+      const params = new URLSearchParams(location.search);
+      const okFromEmail = params.get('k') === 'ok' || location.hash === '#ok';
+      if (okFromEmail) localStorage.setItem('lead_ok_pm', '1');
+      if (localStorage.getItem('lead_ok_pm') !== '1') {
+        // Se não estiver inscrito, redireciona para a página inicial
+        location.href = 'index.html';
+      }
+    })();
+
+    // Constrói o link de pagamento com e-mail, UTMs e order bump
+    function buildLink() {
+      const baseUrl = 'https://pay.kirvano.com/5dff4140-b5c7-4668-b48c-4ae51562b396';
+      const url = new URL(baseUrl);
+      // Se order bump estiver marcado, adiciona parâmetro
+      const bumpCheckbox = document.getElementById('bump');
+      if (bumpCheckbox && bumpCheckbox.checked) {
+        url.searchParams.set('bump', '1');
+      }
+      // Adiciona e-mail do lead, se houver
+      const email = localStorage.getItem('lead_email_pm');
+      if (email) {
+        url.searchParams.set('email', email);
+      }
+      // Adiciona UTMs salvas no localStorage
+      const utm = localStorage.getItem('utm_pm');
+      if (utm) {
+        try {
+          const data = JSON.parse(utm);
+          Object.keys(data).forEach(key => {
+            if (key !== 'ts') {
+              url.searchParams.set(key, data[key]);
+            }
+          });
+        } catch (e) {
+          // Ignora se não conseguir parsear
+        }
+      }
+      return url.toString();
+    }
+
+    // Função para gerenciar o cronômetro e liberar o botão de compra
+    (function setupTimer() {
+      const countdownEl = document.getElementById('countdown');
+      const offerSection = document.getElementById('offerSection');
+      const ctaBtn = document.getElementById('ctaButton');
+      // Tempo inicial visível no cronômetro (minutos)
+      const START_MIN = 20;
+      // Tempo em segundos até liberar o botão (8 minutos)
+      const UNLOCK_AFTER_SEC = 8 * 60;
+      let timeLeft = START_MIN * 60;
+      let unlockTime = UNLOCK_AFTER_SEC;
+      function updateTimer() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        countdownEl.textContent = 'Tempo restante: ' + String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
+        if (timeLeft > 0) {
+          timeLeft--;
+        }
+        if (unlockTime > 0) {
+          unlockTime--;
+          if (unlockTime === 0) {
+            // Libera a oferta e o botão
+            offerSection.style.display = 'block';
+            ctaBtn.disabled = false;
+            countdownEl.style.display = 'none';
+          }
+        }
+      }
+      // Atualiza a cada segundo
+      updateTimer();
+      setInterval(updateTimer, 1000);
+      // Navega para o link de checkout quando clicar
+      ctaBtn.addEventListener('click', function () {
+        const link = buildLink();
+        window.location.href = link;
+      });
+    })();
+  </script>
+</body>
+</html>
